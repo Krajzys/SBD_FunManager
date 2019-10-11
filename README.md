@@ -17,4 +17,4 @@
 	9.Seriale
   
 # Do zrobienia:
-  -Ustalić min. 10 encji
+	Ustalić min. 10 encji
