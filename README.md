@@ -6,15 +6,14 @@
 	ukończenia.
 
 # Encje:
-	1.Lista Ukończonych
-	2.Lista Oczekujących
-	3.Lista w trakcie
-	4.Lista pozycji
-	5.Użytkownik
-	6.Gra
-	7.Książka
-	8.Film
-	9.Seriale
-  
-# Do zrobienia:
-	Ustalić min. 10 encji
+	1.Ukończone
+	2.Oczekujące
+	3.W Trakcie
+	4.Użytkownicy
+	5.Gry
+	6.Książki
+	7.Filmy
+	8.Seriale
+	9.Autorzy(książki)
+	10.Producenci(gry)
+	11.Reżyserzy(filmy/seriale)
