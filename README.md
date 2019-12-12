@@ -9,7 +9,7 @@
 ![Diagram relacji encji](DiagramRelacjiEncji.jpg)
 
 # Diagram relacji:
-![Schemat Relacji](SchematRelacyjny.png)
+![Schemat Relacji](dblab02_students.cs.put.poznan.pl - SubView_1.png)
 	
 # Planowane Procedury
 	- wstaw(Ksiazka/Gra/Film/Serial)
