@@ -9,7 +9,7 @@
 ![Diagram relacji encji](DiagramRelacjiEncji.jpg)
 
 # Diagram relacji:
-![Schemat Relacji](https://github.com/Krajzys/SBD_FunManager/blob/master/dblab02_students.cs.put.poznan.pl%20-%20SubView_1.png)
+![Schemat Relacji](SubView_1.png)
 	
 # Planowane Procedury
 	- wstaw(Ksiazka/Gra/Film/Serial)
