@@ -12,7 +12,7 @@ if ile_autorow < 1 then
     insert into Autor(imie, nazwisko) values(imie_z, nazwisko_z);
 end if;
 if ile_pozycji < 1 then
-    insert into Pozycja(id_pozycja, tytul, rok, typ) values(znalezione_id, tytul_z, rok_z, 'ksiazka');
+    insert into Pozycja(id_pozycja, tytul, rok, typ) values(my_id_pozycja, tytul_z, rok_z, 'ksiazka');
     /* Tutaj mysle ze moznaby np dodac kolumne data dodania, bo moze sie zdazyc ze dwie ksiazki maja ten sam tytul */
     select id_pozycja into my_id_pozycja from Pozycja where tytul=tytul_z and rok=rok_z and typ='ksiazka'; 
     insert into Ksiazka(id_pozycja) values(my_id_pozycja);
