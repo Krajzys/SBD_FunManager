@@ -109,3 +109,72 @@ begin
         insert into Ukonczona(id_uzytkownika, id_pozycja) values(id_uzytkownika_z, my_id_pozycja);
     end
 end;
+/
+/* niesprawdzone. musze pozniej sprawdzic czy dziala. */
+create or replace procedure przenies
+(id_pozycja_z NUMBER, id_uzytkownika_z NUMBER, skad_usunac VARCHAR2, gdzie_dodac VARCHAR2)
+is
+
+begin
+	case skad_usunac
+    when 'oczekujace' then
+        delete from oczekujace where id_pozycja=id_pozycja_z;
+    when 'w_trakcie' then
+        delete from w_trakcie where id_pozycja=id_pozycja_z;
+    when 'ukonczona' then
+        delete from ukonczona where id_pozycja=id_pozycja_z;
+    end
+    
+	case gdzie_dodac
+    when 'oczekujace' then
+        insert into Oczekujace(id_uzytkownika, id_pozycja) values(id_uzytkownika_z, my_id_pozycja);
+    when 'w_trakcie' then
+        insert into W_trakcie(id_uzytkownika, id_pozycja, data_rozpoczecia) values(id_uzytkownika_z, id_pozycja_z, CURRENT_DATE);
+    when 'ukonczona' then
+        insert into W_trakcie(id_uzytkownika, id_pozycja, data_ukonczenia) values(id_uzytkownika_z, id_pozycja_z, CURRENT_DATE);
+    end
+    
+end;
+
+/
+/* używane gdy mamy już wypełniony arkusz */
+create or replace procedure edytuj_oczekujace
+(id_pozycja_z NUMBER, typ_z VARCHAR2, tytul_z VARCHAR2, rok_z DATE, id_uzytkownika_z NUMBER, priorytet_z NUMBER)
+is
+
+begin
+	update pozycja set tytul = tytul_z, rok = rok_z, typ = typ_z where id_pozycja = id_pozycja_z;
+	update oczekujace set priorytet = priorytet_z where id_pozycja = id_pozycja_z and id_uzytkownika = id_uzytkownika_z;
+	
+	/* nie wiem czy dodawac tutaj mozliwosc edycji autora? czy jako osobna procedura? */
+    
+end;
+
+/
+/* używane gdy mamy już wypełniony arkusz */
+create or replace procedure edytuj_w_trakcie
+(id_pozycja_z NUMBER, typ_z VARCHAR2, tytul_z VARCHAR2, rok_z DATE, data_rozpoczecia_z DATE, id_uzytkownika_z NUMBER, stopien_ukonczenia_z NUMBER)
+is
+
+begin
+	update pozycja set tytul = tytul_z, rok = rok_z, typ = typ_z where id_pozycja = id_pozycja_z;
+	update w_trakcie set data_rozpoczecia = data_rozpoczecia_z, stopien_ukonczenia = stopien_ukonczenia_z where id_pozycja = id_pozycja_z and id_uzytkownika = id_uzytkownika_z;
+    
+end;
+
+/
+
+/* używane gdy mamy już wypełniony arkusz */
+create or replace procedure edytuj_ukonczona
+(id_pozycja_z NUMBER, typ_z VARCHAR2, tytul_z VARCHAR2, rok_z DATE, data_ukonczenia_z DATE, id_uzytkownika_z NUMBER, stopien_ukonczenia_z NUMBER)
+is
+
+begin
+	update pozycja set tytul = tytul_z, rok = rok_z, typ = typ_z where id_pozycja = id_pozycja_z;
+	update ukonczona set data_ukonczenia = data_ukonczenia_z where id_pozycja = id_pozycja_z and id_uzytkownika = id_uzytkownika_z;
+    
+end;
+
+/
+
+
