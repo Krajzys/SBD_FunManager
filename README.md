@@ -25,6 +25,7 @@
 	* Usunięcie wszystkich rekordów i dodanie od nowa (już na czysto jakieś przykładowe książki, filmy, gry, gatunki i twórcy) to też nam posłuży jako test co można poprawić
 	* W Gatunki -> Zarządzaj przydzieleniem gatunkó, niezakodowana funkcja przycisku "ołówka"
 	*- Aby nie trzebabyło wpisywać D/M/ROK podczas dodawania pozycji. By wystarczył ROK
+	*- W zakładce Twórcy przy łączeniu twórcy z dziełem imię nie idzie w parze z nazwiskiem
 	- Aby po 'Dodaj *' -> 'Dodaj Nową Pozycję' -> 'Dodaj *' przekierowywało do HOME, a nie pozostawiało w 'Dodaj Pozycję'
 	- Ładniejsze 'lub' pomiędzy wybieraniem pozycji, a przyciskiem 'Dodaj nową pozycję' na ekranie Dodaj Oczekujące/W trakcie/Ukończone
 	- Jakieś drobne poprawki typu zmiana nazw jakichś pól itp
