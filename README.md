@@ -23,4 +23,5 @@
 	* Dodanie komunikatów o błędach do wszystkeigo
 	* Poprawne wyświetlanie wielu autorów książek i wielu reżyserów filmów
 	* Usunięcie wszystkich rekordów i dodanie od nowa (już na czysto jakieś przykładowe książki, filmy, gry, gatunki i twórcy) to też nam posłuży jako test co można poprawić
+	* Dodanie 'Dodaj Pozycje -> Ukonczone' oraz modyfikacja Dodaj Oczekujące/W trakcie/Ukonczone tak aby przekierowywało do odpowiedniej strony 'Dodaj Pozycje -> ... '
 	- Jakieś drobne poprawki typu zmiana nazw jakichś pól itp
