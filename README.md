@@ -19,6 +19,7 @@
 
 ## TODO
 	* Poprawne wyświetlanie wielu gatunków (HOME)
+		* Pozycja z dwoma lub wiecej gatunkami wyswietla sie jako dwa lub wiecej rekordów, powinna jako jeden ze zagregowanymi gatunkami
 	* Dodanie komunikatów o błędach do wszystkeigo
 	* Poprawne wyświetlanie wielu autorów książek i wielu reżyserów filmów
 	* Usunięcie wszystkich rekordów i dodanie od nowa (już na czysto jakieś przykładowe książki, filmy, gry, gatunki i twórcy) to też nam posłuży jako test co można poprawić
