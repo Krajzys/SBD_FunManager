@@ -21,11 +21,9 @@
 	* Poprawne wyświetlanie wielu gatunków (HOME)
 		* Pozycja z dwoma lub wiecej gatunkami wyswietla sie jako dwa lub wiecej rekordów, powinna jako jeden ze zagregowanymi gatunkami
 	* Dodanie komunikatów o błędach do wszystkeigo
-		* Gdy chcę usunąć użytkownika
 	* Poprawne wyświetlanie wielu autorów książek i wielu reżyserów filmów
 	* Usunięcie wszystkich rekordów i dodanie od nowa (już na czysto jakieś przykładowe książki, filmy, gry, gatunki i twórcy) to też nam posłuży jako test co można poprawić
-	* W Gatunki -> Zarządzaj przydzieleniem gatunkó, niezakodowana funkcja przycisku "ołówka"
-	*- Aby nie trzebabyło wpisywać D/M/ROK podczas dodawania pozycji. By wystarczył ROK
+	* W Gatunki -> Zarządzaj przydzieleniem gatunków, niezakodowana funkcja przycisku "ołówka"
 	*- W zakładce Twórcy przy łączeniu twórcy z dziełem imię nie idzie w parze z nazwiskiem
 	- Aby po 'Dodaj *' -> 'Dodaj Nową Pozycję' -> 'Dodaj *' przekierowywało do HOME, a nie pozostawiało w 'Dodaj Pozycję'
 	- Ładniejsze 'lub' pomiędzy wybieraniem pozycji, a przyciskiem 'Dodaj nową pozycję' na ekranie Dodaj Oczekujące/W trakcie/Ukończone
